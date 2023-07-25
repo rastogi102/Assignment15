@@ -1,0 +1,37 @@
+Time Complexity of Quicksort:
+
+* In the best-case scenario, the pivot chosen is the median of the array, and each partition divides the array into two equal halves. 
+* In this case, the time complexity is O(n log n).
+* In the worst-case scenario, the pivot chosen is either the smallest or largest element, resulting in only one partition being created with n - 1 elements on one side. 
+* This will happen in every recursive call, leading to O(n^2) time complexity.
+* On average, the Quicksort algorithm performs well and has an average time complexity of O(n log n).
+
+Now, let's compare Quicksort with Merge Sort:
+
+Advantages of Quicksort:
+
+* Quicksort usually performs better on average than Merge Sort and many other sorting algorithms.
+* It is an in-place sorting algorithm, meaning it doesn't require additional memory proportional to the size of the input array like Merge Sort does.
+* Quicksort is well-suited for large datasets and performs efficiently in practice due to its cache-friendly nature.
+* It is easy to implement and can be optimized further to improve its performance.
+
+Disadvantages of Quicksort:
+
+* The worst-case time complexity of O(n^2) can occur, which is inefficient compared to Merge Sort's guaranteed O(n log n) worst-case time complexity.
+* Quicksort is not a stable sorting algorithm, meaning the relative order of equal elements might change after sorting.
+* The choice of the pivot can affect the performance, and if not selected carefully, it can lead to suboptimal sorting times.
+
+Conclusion:
+
+Quicksort is a highly efficient sorting algorithm on average, with a time complexity of O(n log n). However, it can degrade to O(n^2) in the worst-case scenario. 
+Despite this, it performs well in practice and is widely used due to its cache-friendly nature and in-place sorting capability.
+
+Comparing Quicksort to Merge Sort, Quicksort has advantages in terms of average performance, in-place sorting, and cache efficiency. 
+However, Merge Sort has a more consistent and predictable performance with a guaranteed O(n log n) time complexity in all cases.
+
+The choice between Quicksort and Merge Sort depends on the specific use case and the data distribution. 
+If stability and worst-case performance are critical, Merge Sort might be a better choice. 
+If average-case performance and memory efficiency are more important, Quicksort could be preferred. 
+
+Additionally, there are hybrid sorting algorithms like Introsort, which combine the strengths of both Quicksort and Heapsort, 
+providing a good compromise between the two algorithms.
